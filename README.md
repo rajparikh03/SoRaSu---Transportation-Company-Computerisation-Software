@@ -1,36 +1,20 @@
 
 # SoRaSu-TCCS
 
-A Web-based application created using HTML,CSS,JS for the frontend and Flask, SQLite, Here Routing API and SmtpJS for the backend.
+SoRaSu is a Transportation Company Computerization Software (TCCS) designed as a web-based application. The frontend is built with HTML, CSS, and JavaScript, while the backend utilizes Flask, SQLite, the Here Routing API, and SmtpJS.
 
-SoRaSu is a Transportation Company Computerization Software (TCCS).
+The TCCS aims to assist transportation companies in digitizing various bookkeeping activities related to their operations. These companies handle consignments of varying sizes (measured in cubic meters) at their offices, which are then forwarded to different branches across the country.
 
-The TCCS is a software that can help a transport company computerize various book
-keeping activities associated with its operations. The transport company receives
-consignments of various sizes at (measured in cubic meters) its different offices to be
-forwarded to different branch offices across the country.
+System Overview
+When a consignment arrives at a transport company's office, its details (volume, destination address, sender address, etc.) are entered into the system. The system calculates the transport charge based on the consignment's volume and destination, and then generates a bill.
 
-Once the consignment arrives at the office of the transport company, the details of the
-volume, destination address, sender address, etc. are entered into the computer. The
-computer would compute the transport charge depending upon the volume of the
-consignment and its destination and would issue a bill for the consignment.
+Once the total volume of consignments for a specific destination reaches 500 cubic meters, the system automatically assigns the next available truck. Trucks remain at the branch office until there is enough cargo to fully load them.
 
-Once the volume of any particular destination becomes 500 cubic meters, the
-the computerization system should automatically allot the next available truck.
-A truck stays with the branch office until the branch office has enough cargo to load the truck
-fully.
+Managers can monitor the status of different trucks at any time and view truck usage statistics over a specified period.
 
-The manager should be able to view the status of different trucks at any time. The manager
-should be able to view truck usage over a given period of time.
+When a truck is ready and the required consignment volume is available for dispatch, the system prints details such as consignment number, volume, sender's name and address, and receiver’s name and address, which accompany the truck.
 
-When a truck is available and the required consignment is available for dispatch, the
-computer system will print the details of the consignment number, volume, sender's name
-and address, and the receiver’s name and address to be forwarded along with the truck.
-
-The manager of the transport company can query the status of any particular consignment
-and the details of volume of consignments handled to any particular destination and the
-corresponding revenue generated. The manager would be able to view the availability,
-waiting period and idle time of the trucks.
+Managers can query the status of any consignment, check the volume of consignments handled for any destination, and view the corresponding revenue generated. They can also track truck availability, waiting periods, and idle times.
 
 Product Functions:
 Manager :
